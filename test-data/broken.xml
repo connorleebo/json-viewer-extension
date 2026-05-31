@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Broken XML Sample">
+  <license>MIT</license>
+  <tags>
+    <tag>alpha</tag>
+    <tag>beta</tag>
+    <tag>gamma
+  </tags>
+  <notes>The "gamma" tag above is never closed, which breaks parsing.</notes>
+</project>

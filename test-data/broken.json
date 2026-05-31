@@ -1,0 +1,10 @@
+{
+  "name": "Broken Sample",
+  "version": "0.1.0",
+  "tags": ["a", "b" "c"],
+  "deliberatelyBroken": true,
+  "trailingFields": {
+    "ok": "this part is fine",
+    "before": "the missing comma on the tags array above breaks parsing"
+  }
+}

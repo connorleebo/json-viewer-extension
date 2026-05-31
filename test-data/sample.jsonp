@@ -1,0 +1,14 @@
+/**/jQuery1234_callback({
+  "status": "ok",
+  "kind": "jsonp-test",
+  "wrapper": "jQuery1234_callback(...)",
+  "data": {
+    "user": "alice",
+    "scores": [10, 20, 30],
+    "metadata": {
+      "fetched": "2026-05-31",
+      "stale": false,
+      "ttl": null
+    }
+  }
+});

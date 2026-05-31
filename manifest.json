@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "JSON Viewer (Stage 3)",
+  "version": "0.3.0",
+  "description": "Privacy-first JSON / YAML / XML viewer. Click the toolbar icon to render as a collapsible color-coded tree. Search, copy, sort, dark mode (saved locally), JSONP detection, large-file lazy rendering. The ONLY data stored is your theme preference. Zero network calls. Open source.",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "View JSON as collapsible tree"
+  }
+}

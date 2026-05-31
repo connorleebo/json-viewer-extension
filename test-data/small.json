@@ -1,0 +1,36 @@
+{
+  "name": "JSON Viewer Stage 1",
+  "version": "0.1.0",
+  "released": true,
+  "downloads": 0,
+  "license": null,
+  "tags": ["mv3", "privacy", "open-source"],
+  "permissions": {
+    "activeTab": true,
+    "scripting": true,
+    "host_permissions": []
+  },
+  "authors": [
+    { "name": "Alice",   "role": "lead",       "active": true,  "commits": 142 },
+    { "name": "Bob",     "role": "reviewer",   "active": false, "commits": 8   },
+    { "name": "Charlie", "role": "contributor","active": true,  "commits": 23  }
+  ],
+  "metrics": {
+    "openIssues": 4,
+    "openPRs": 1,
+    "lastRelease": "2026-05-28",
+    "ratings": {
+      "stars": 4.7,
+      "reviewCount": 12,
+      "distribution": [0, 0, 1, 2, 9]
+    }
+  },
+  "notes": "Click any node to fold or unfold it. Each container shows its element count.",
+  "emptyExamples": {
+    "emptyObject": {},
+    "emptyArray": [],
+    "emptyString": "",
+    "zero": 0,
+    "falseValue": false
+  }
+}

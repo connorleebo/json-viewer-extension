@@ -1,0 +1,43 @@
+---
+name: JSON Viewer Stage 2
+version: 0.2.0
+released: true
+downloads: 0
+license: null
+tags:
+  - mv3
+  - privacy
+  - open-source
+permissions:
+  activeTab: true
+  scripting: true
+  host_permissions: []
+authors:
+  - name: Alice
+    role: lead
+    active: true
+    commits: 142
+  - name: Bob
+    role: reviewer
+    active: false
+    commits: 8
+  - name: Charlie
+    role: contributor
+    active: true
+    commits: 23
+metrics:
+  openIssues: 4
+  openPRs: 1
+  lastRelease: "2026-05-31"
+  ratings:
+    stars: 4.7
+    reviewCount: 12
+    distribution: [0, 0, 1, 2, 9]
+notes: |
+  Multi-line scalar in YAML — should render as a single string value
+  with the embedded newlines preserved.
+emptyExamples:
+  emptyObject: {}
+  emptyArray: []
+  zero: 0
+  falseValue: false

@@ -1,0 +1,32 @@
+# macOS junk
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node (in case dependencies are ever added)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build / packaging artifacts (Chrome Web Store zip drops, etc.)
+*.zip
+*.crx
+*.pem
+dist/
+build/
+
+# Local-only test scratch
+test-data/_runner.html
+.playwright-mcp/
+.local/
+.env
+.env.*

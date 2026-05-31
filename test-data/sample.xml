@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="JSON Viewer Stage 2" version="0.2.0" released="true">
+  <license>MIT</license>
+  <tags>
+    <tag>mv3</tag>
+    <tag>privacy</tag>
+    <tag>open-source</tag>
+  </tags>
+  <permissions>
+    <activeTab>true</activeTab>
+    <scripting>true</scripting>
+    <host_permissions/>
+  </permissions>
+  <authors>
+    <author role="lead" active="true">
+      <name>Alice</name>
+      <commits>142</commits>
+    </author>
+    <author role="reviewer" active="false">
+      <name>Bob</name>
+      <commits>8</commits>
+    </author>
+    <author role="contributor" active="true">
+      <name>Charlie</name>
+      <commits>23</commits>
+    </author>
+  </authors>
+  <metrics>
+    <openIssues>4</openIssues>
+    <openPRs>1</openPRs>
+    <lastRelease>2026-05-31</lastRelease>
+    <ratings stars="4.7" reviewCount="12">
+      <distribution>0</distribution>
+      <distribution>0</distribution>
+      <distribution>1</distribution>
+      <distribution>2</distribution>
+      <distribution>9</distribution>
+    </ratings>
+  </metrics>
+  <notes>Click any container node to fold or unfold it. Each container shows its element count.</notes>
+</project>

@@ -1,0 +1,10 @@
+---
+name: "Broken YAML Sample
+version: 0.2.0
+tags:
+  - alpha
+  - beta
+deliberatelyBroken: true
+notes: |
+  The opening quote on the "name" value above is never closed,
+  which makes this YAML invalid.
