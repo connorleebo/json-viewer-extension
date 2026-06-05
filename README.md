@@ -12,7 +12,7 @@ It works on `application/json` HTTP responses, on Chrome's built-in XML viewer (
 
 ## Why this exists
 
-The most popular JSON viewer for Chrome — at one point installed by around two million people — transitioned to closed source in early 2026 and began silently injecting donation popups onto unrelated checkout pages, along with geolocation tracking and external tracking calls. Users felt betrayed; security writeups recommended uninstall. This extension is a clean-slate replacement built on the opposite principles.
+The most popular JSON viewer for Chrome — transitioned to closed source in early 2026 and began silently injecting donation popups onto unrelated checkout pages, along with geolocation tracking and external tracking calls. Users felt betrayed; security writeups recommended uninstall. This extension is a clean-slate replacement built on the opposite principles.
 
 ## The trust pitch
 
