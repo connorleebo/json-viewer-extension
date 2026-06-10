@@ -19,7 +19,7 @@ The most popular JSON viewer for Chrome went closed-source in early 2026 and beg
 
 ## Install
 
-- **Chrome Web Store** — _coming soon_.
+- **Chrome Web Store** — [install here](https://chromewebstore.google.com/detail/jljkcfhlbilhnhidghiepnbamhdjnpjf)
 - **Load unpacked (for developers and early testers)** — see the [README on GitHub](https://github.com/connorleebo/json-viewer-extension#install-load-unpacked) for step-by-step instructions.
 
 ---
@@ -38,7 +38,7 @@ The most popular JSON viewer for Chrome went closed-source in early 2026 and beg
 
 - 📖 [Privacy Policy](./privacy-policy)
 - 🐙 [GitHub repository](https://github.com/connorleebo/json-viewer-extension)
-- 🛒 Chrome Web Store — _coming soon_
+- 🛒 [Install from the Chrome Web Store](https://chromewebstore.google.com/detail/jljkcfhlbilhnhidghiepnbamhdjnpjf)
 - 🐞 [Report an issue](https://github.com/connorleebo/json-viewer-extension/issues)
 
 ---
