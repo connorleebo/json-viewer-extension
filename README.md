@@ -35,9 +35,15 @@ The most popular JSON viewer for Chrome — at one point installed by around two
 - Large-file lazy rendering with a continuous progress indicator; tested at ~10 MB
 - Parse errors show line, column, and a `^` caret pointing at the offending character
 
-## Install (load unpacked)
+## Install
 
-While the extension is in pre-release:
+### Install from the Chrome Web Store (recommended)
+
+https://chromewebstore.google.com/detail/jljkcfhlbilhnhidghiepnbamhdjnpjf
+
+One click, auto-updates, recommended for most users.
+
+### Run from source (for developers)
 
 1. Clone or download this repo.
 2. Open `chrome://extensions` in Chrome.
