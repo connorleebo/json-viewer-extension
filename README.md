@@ -1,6 +1,6 @@
 # JSON Viewer
 
-**A privacy-first JSON, YAML, and XML viewer for Chrome. Open source, MIT, zero network calls.**
+**A privacy-first JSON, YAML, and XML viewer for Chrome. Open source, MIT, zero remote network calls.**
 
 ---
 
