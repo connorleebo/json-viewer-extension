@@ -12,11 +12,11 @@ It works on `application/json` HTTP responses, on Chrome's built-in XML viewer (
 
 ## Why this exists
 
-The most popular JSON viewer for Chrome — transitioned to closed source in early 2026 and began silently injecting donation popups onto unrelated checkout pages, along with geolocation tracking and external tracking calls. Users felt betrayed; security writeups recommended uninstall. This extension is a clean-slate replacement built on the opposite principles.
+As concerns around privacy, tracking, and unexpected browser-extension behavior continue to grow across the developer community, many of us have started looking more carefully at the tools we install. This extension was built around a simple idea: a structured-data viewer should view structured data — and nothing else.
 
 ## The trust pitch
 
-- **Zero network calls.** The extension never fetches anything from a remote server, never sends telemetry, never phones home. The only `fetch` it ever makes is a *same-origin* read of the active tab's own URL when Chrome's built-in XML viewer needs the raw source — and that path is opt-in by URL pattern only.
+- **Zero remote network calls.** The extension never fetches anything from a remote server, never sends telemetry, never phones home. The only `fetch` it ever makes is a *same-origin* read of the active tab's own URL when Chrome's built-in XML viewer needs the raw source — and that path is opt-in by URL pattern only.
 - **Three permissions, each minimal.** `activeTab` (temporary access to only the current tab, only when you click the toolbar icon), `scripting` (so we can inject the viewer), and `storage` (used for exactly one preference — your theme choice — saved to `chrome.storage.local`, never `sync`). **No `<all_urls>`, no `tabs`, no `cookies`, no `webRequest`, no `host_permissions`.**
 - **Click-to-activate.** Nothing runs until you click the toolbar icon. The extension cannot read any page you don't gesture on.
 - **Open source under MIT.** Every line is in this repo, unminified, no obfuscation, no build step. Audit it.
@@ -56,14 +56,10 @@ The sample fixtures in `test-data/` cover the happy paths plus parse-error scena
 
 ## Privacy
 
-> **We collect nothing. We make zero network calls.** The only data stored is your light/dark theme preference, saved to `chrome.storage.local` (this device only — never synced across devices). You can disable storage or clear the saved preference any time from the in-viewer Settings menu.
+> **We collect nothing. We make zero remote network calls.** The only data stored is your light/dark theme preference, saved to `chrome.storage.local` (this device only — never synced across devices). You can disable storage or clear the saved preference any time from the in-viewer Settings menu.
 
 If you're auditing: the entire request surface of this extension is `chrome.scripting.insertCSS` + `chrome.scripting.executeScript` (to inject our own bundled files into the active tab when you click the icon) and `chrome.storage.local.{get, set, remove}` (one key). There is no `fetch`, `XMLHttpRequest`, or analytics SDK in the source. The single `fetch(window.location.href)` in `viewer.js` is the same-origin read mentioned above, guarded behind a `.xml` URL / content-type check.
 
 ## License
 
 MIT — see [LICENSE](./LICENSE). The vendored YAML parser at `vendor/js-yaml.js` is also MIT; its license is preserved at `vendor/js-yaml.LICENSE`.
-
-## Internal references
-
-Background notes live in [`docs/recon.md`](./docs/recon.md) (market context) and [`docs/feature-checklist.md`](./docs/feature-checklist.md) (full roadmap and hard rules). These are reference material, not contributor guides.

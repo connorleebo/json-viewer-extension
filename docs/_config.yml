@@ -2,10 +2,3 @@ title: JSON Viewer
 description: Privacy-first JSON, YAML, and XML viewer for Chrome
 theme: jekyll-theme-cayman
 show_downloads: false
-
-# Render only the pages we actually want in the Pages site. The other
-# .md files under docs/ (recon.md, feature-checklist.md) are repo
-# reference material and are excluded from the published Pages site.
-exclude:
-  - recon.md
-  - feature-checklist.md
